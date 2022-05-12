@@ -22,7 +22,7 @@ header {
   padding-top: 1%;
   padding-bottom: 1%;
   text-align: center;
-  background-color: #444444;
+  background-color: rgb(68, 68, 68);
   margin-left: 0px;
   margin-right: 0px;
   left: 0;
@@ -47,7 +47,6 @@ nav {
   padding-left: 30px;
   padding-right: 30px;
 }
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,16 +54,14 @@ nav ul {
   gap: 40px;
   list-style-type: none;
 }
-
 nav ul ._nav_btn {
   text-decoration: none;
   color: white;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 600;
 }
-
 nav ul .nav_button_contact {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   color: black;
   font-weight: bold;
   font-size: 20px;
@@ -72,7 +69,6 @@ nav ul .nav_button_contact {
   border-radius: 100px;
   background-color: white;
 }
-
 nav ul .nav_button_contact:hover {
   color: white;
   background-color: #78cef6;
@@ -87,7 +83,7 @@ nav ul .nav_button_contact:hover {
 }
 
 h1 {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 56px;
   color: white;
@@ -131,7 +127,7 @@ article {
 ._txt_body {
   height: 600px;
   width: 50%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,33 +143,30 @@ article {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-
 ._txt_body h2 {
   font-size: 40px;
   margin-bottom: 40px;
   margin-left: 100px;
   margin-right: auto;
   letter-spacing: -0.285px;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-weight: 900;
 }
-
 ._txt_body ._p_main {
   color: #808397;
   margin-bottom: 40px;
   text-align: left;
   margin-left: 100px;
   margin-right: 40px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: -0.13px;
 }
-
 ._txt_body ._btn_learn_egg {
   color: black;
   margin-left: 100px;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 15px;
   letter-spacing: 1px;
@@ -181,11 +174,10 @@ article {
   position: relative;
   top: 8px;
 }
-
 ._txt_body ._btn_learn_cup {
   color: black;
   margin-left: 100px;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 15px;
   letter-spacing: 1px;
@@ -193,7 +185,6 @@ article {
   position: relative;
   top: 8px;
 }
-
 ._txt_body ._shadow_deco_egg {
   height: 10px;
   width: 120px;
@@ -201,7 +192,6 @@ article {
   margin-left: 100px;
   border-radius: 10px;
 }
-
 ._txt_body ._shadow_deco_cup {
   height: 10px;
   width: 120px;
@@ -209,19 +199,15 @@ article {
   margin-left: 100px;
   border-radius: 10px;
 }
-
 ._txt_body ._btn_learn_egg {
   cursor: pointer;
 }
-
 ._txt_body ._btn_learn_egg:hover ~ ._shadow_deco_egg {
   background-color: #FAD400;
 }
-
 ._txt_body ._btn_learn_cup {
   cursor: pointer;
 }
-
 ._txt_body ._btn_learn_cup:hover ~ ._shadow_deco_cup {
   background-color: #FE7766;
 }
@@ -261,11 +247,11 @@ article {
 }
 
 h4 {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-size: 28px;
   font-weight: 900;
   line-height: 35px;
-  letter-spacing: -0.20000000298023224px;
+  letter-spacing: -0.200000003px;
   text-align: center;
   color: #24554A;
   margin-bottom: 27px;
@@ -310,7 +296,7 @@ h4 {
 }
 
 .h2_client {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -351,7 +337,7 @@ h4 {
   font-size: 18px;
   font-weight: 600;
   line-height: 32px;
-  letter-spacing: -0.12857143580913544px;
+  letter-spacing: -0.1285714358px;
   text-align: center;
   color: #5B636D;
   margin-bottom: 69px;
@@ -366,7 +352,7 @@ h4 {
   font-size: 18px;
   font-weight: 900;
   line-height: 22px;
-  letter-spacing: -0.12857143580913544px;
+  letter-spacing: -0.1285714358px;
   text-align: center;
   color: #24303E;
   margin-bottom: 9px;
@@ -380,7 +366,7 @@ h4 {
   font-size: 14px;
   font-weight: 600;
   line-height: 25px;
-  letter-spacing: -0.10000000149011612px;
+  letter-spacing: -0.1000000015px;
   text-align: center;
   color: #A7AAAD;
   margin-bottom: 140px;
@@ -447,4 +433,4 @@ footer {
           justify-content: center;
   background-color: #90D4C6;
   height: 350px;
-}
+}/*# sourceMappingURL=style.css.map */
