@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap%27');
+$barlow:'Barlow', sans-serif;
+$fraunces:'Fraunces', serif ;
 
 * {
     margin: 0;
@@ -98,8 +100,7 @@ article{
     flex-wrap: wrap;
     flex-basis: auto;
     width: auto;
-    height: 600px;
-    background-color: rgb(0, 255, 170);
+    background-color: white;
 }
 
 ._txt_body{
@@ -217,14 +218,15 @@ article{
     background-image: url(/src/img/cerise.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #F9D531;
+    background-color: #92E1D3;
+
 }
 
 ._img_mandarine{
     background-image: url(/src/img/mandarine.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #F57D6D;
+    background-color: #65C6F5;
 }
 
 h4{
@@ -249,4 +251,126 @@ h4{
 ._img_body_under{
     display: flex;
 	flex-direction: column-reverse;
+}
+.article_client{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    padding-left: 165px;
+    padding-right: 165px;
+
+}
+.h2_client{
+    font-family:'Fraunces', serif ;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;    
+    text-align: center;
+    letter-spacing: 5px; 
+    color:#a7aaad; 
+    background-color: white;
+    padding-top:150px; 
+
+}
+.client_box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    width: 350px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+
+}
+.p_client{
+    font-family:$barlow;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.12857143580913544px;
+    text-align: center;
+    color: #5B636D;
+    margin-bottom: 69px;
+}
+.img_client{
+    margin-bottom: 60px;
+
+
+}
+.nom_client{
+    font-family: $fraunces ;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    letter-spacing: -0.12857143580913544px;
+    text-align: center;
+    color: #24303E;
+    margin-bottom: 9px;
+
+}
+.h6_client{
+    display: flex;
+    font-family:$barlow;
+font-size: 14px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: -0.10000000149011612px;
+text-align: center;
+color: #A7AAAD;
+margin-bottom: 140px;
+
+}
+.quatre_img{
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    flex: 1 1 auto;
+}
+.quatre_img_deco{
+    width:360px;
+    height: 447px;
+    background-color: white;
+}
+.img_lait{
+    background-image: url(/src/img/lait.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.img_citron{
+    background-image: url(/src/img/orangeplant.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+.img_glace{
+    background-image: url(/src/img/glace.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+.img_sucre{
+    background-image: url(/src/img/sucre.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #90D4C6;
+    height: 350px;
 }
