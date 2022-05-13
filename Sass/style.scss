@@ -301,6 +301,7 @@ h4{
     margin-bottom: 69px;
 }
 .img_client{
+    margin-top: 153px;
     margin-bottom: 60px;
 
 
@@ -370,7 +371,54 @@ margin-bottom: 140px;
 }
 footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #90D4C6;
     height: 350px;
+    align-items:center;
+
 }
+    
+    .footer_logo{
+        justify-content:center;
+        height: 33px;
+    width: 170px;
+
+    }
+    .footer_link{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 150px;
+        margin-top: 65px;
+        :nth-child(1){
+            color: #458D7E;
+            &:hover{
+                color: white;
+            }
+        }
+        :nth-child(2){
+            color: #458D7E;
+            &:hover{
+                color: white;
+            }
+        }
+        :nth-child(3){
+            color: #458D7E;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    .footer_reseaux{
+        margin-top: 108px;
+        margin-bottom: 73.5px;
+        :nth-child(1){
+            color: #458D7E;
+            
+            &:hover{
+                color: white;
+
+            }
+        }
+    
+    }
