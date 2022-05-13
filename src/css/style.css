@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap%27");
+@use 'mobile';
+.menu_burger {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,6 +119,7 @@ main {
           align-items: stretch;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
+  margin: 0px;
 }
 
 article {
@@ -236,28 +242,28 @@ article {
   background-image: url(/src/img/oeuf.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F9D531;
+  background-size: cover;
 }
 
 ._img_cup {
   background-image: url(/src/img/cup.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F57D6D;
+  background-size: cover;
 }
 
 ._img_cerise {
   background-image: url(/src/img/cerise.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #92E1D3;
+  background-size: cover;
 }
 
 ._img_mandarine {
   background-image: url(/src/img/mandarine.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #65C6F5;
+  background-size: cover;
 }
 
 h4 {
@@ -401,9 +407,6 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -413,6 +416,7 @@ h4 {
   width: 360px;
   height: 447px;
   background-color: white;
+  size-adjust: cover;
 }
 
 .img_lait {
@@ -510,4 +514,226 @@ footer {
 
 .footer_reseaux :nth-child(1):hover {
   color: white;
+}
+
+/*-------------------------------
+    RESPONSIVE-------------
+    -----------------------------
+    */
+@media only screen and (max-width: 769px) {
+  .nav_header {
+    margin-top: 25px;
+  }
+  .ul_nav_header {
+    display: none;
+  }
+  body {
+    background-color: white;
+  }
+  ._txt_body h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+  ._txt_body ._p_main {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  ._txt_body ._btn_learn_egg {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  ._txt_body ._btn_learn_cup {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  ._txt_body ._shadow_deco_egg {
+    display: none;
+    height: 10px;
+    width: 120px;
+    background-color: #FEF2BA;
+    margin-left: 127.80000000023px;
+    border-radius: 10px;
+  }
+  ._txt_body ._shadow_deco_cup {
+    display: none;
+    height: 10px;
+    width: 120px;
+    background-color: #FFDBD4;
+    margin-left: 127.80000000023px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article_egg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  ._img_body {
+    width: 100vw;
+    height: 312px;
+  }
+  ._txt_body {
+    width: 100vw;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    background-position: center;
+  }
+  .h2_body {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  ._img_egg {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  ._img_cerise {
+    width: 375px;
+    height: auto;
+  }
+  ._img_mandarine {
+    width: 375px;
+    height: auto;
+  }
+  .article_client {
+    padding-left: 0;
+    padding-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  ._img_body_under {
+    width: 100vw;
+    height: 600px;
+  }
+  ._p_under_main {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .client_box {
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .img_client {
+    margin-top: 0;
+  }
+  .h2_client {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  header {
+    margin-top: 0;
+  }
+  .footer_link {
+    gap: 57px;
+  }
+  .footer_reseaux {
+    margin-top: 50px;
+  }
+  .footer_reseaux :nth-child(1) {
+    font-size: x-large;
+  }
+  .p_client {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .menu_burger {
+    display: block;
+  }
+  .quatre_img {
+    display: -ms-grid;
+    display: grid;
+    height: 325px;
+    width: 100vw;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+        grid-template-areas: "img_lait img_citron" "img_glace img_sucre";
+  }
+  .quatre_img .img_lait {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img_lait;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .quatre_img .img_citron {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img_citron;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .quatre_img .img_glace {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: img_glace;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .quatre_img .img_sucre {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: img_sucre;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
 }
