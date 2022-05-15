@@ -1,11 +1,11 @@
 # sunnyside-agency
 
-Creation du site internet en pixel pefect.
+Creation d'une page web pixel pefect.
 
-Fais en html CSS 
+Fais en HTML CSS/SASS
 
 outil:
 
-Sass et beacoup de talents
+Sass et beaucoup de talents
 
-Lien du site : https://sunnyside-artseb.000webhostapp.com/
+Lien du site : https://kingdragox99.github.io/sunnyside-agency/
