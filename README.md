@@ -9,3 +9,4 @@ outil:
 Sass et beaucoup de talents
 
 Lien du site : https://kingdragox99.github.io/sunnyside-agency/
+Lien avec page 404 : https://sunnyside-artseb.000webhostapp.com/
