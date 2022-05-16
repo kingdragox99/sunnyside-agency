@@ -2,11 +2,6 @@
 $barlow:'Barlow', sans-serif;
 $fraunces:'Fraunces', serif ;
 
-.menu_burger{
-    display:none;
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +15,11 @@ $fraunces:'Fraunces', serif ;
 
 html{
     overflow-x: hidden;
+}
+
+.menu_burger{
+    display:none;
+
 }
 
 body{
@@ -92,6 +92,7 @@ h1{
     margin-top: 70px;
     margin-bottom: 50px;
 }
+
 
 main{
         display: flex;
@@ -435,7 +436,6 @@ footer{
     
     }
 
-
     /*-------------------------------
     RESPONSIVE-------------
     -----------------------------
@@ -445,11 +445,67 @@ footer{
 
         .nav_header{
             margin-top: 25px;
+            justify-content: center;
+            justify-content: space-between;
+        }
+        
+        .menu_burger + label{
+            background:url('../img/burger_menu.png') no-repeat;
+            height: 32px;
+            width: 32px;
+            display:inline-block;
+            padding: 0 0 0 0px;
+        }
+        
+        .menu_burger:checked + label{
+            background:url('../img/burger_menu.png') no-repeat;
+            height: 32px;
+            width: 32px;
+            display:inline-block;
+            padding: 0 0 0 0px;
         }
 
-        .ul_nav_header{
-            display: none;
+        nav ul ._nav_btn{
+            color:#808397;
+            font-size: 20px;
         }
+
+        nav ul ._nav_bleu{
+            background-color: #49BCF1;
+            height : 0;
+            width : auto;
+            border-top : 24px solid transparent;
+            border-right : 24px solid white;
+        }
+
+        .menu_burger {
+            display: none;
+          }
+          
+          .menu_burger:checked ~ .ul_nav_header {
+            position: relative;
+            top: 10px;
+            display: block;
+            width: 80vw;
+            background-color: #FFFCF8;
+            color: black;
+            padding-bottom: 35px;
+          }
+
+          li{
+              margin-bottom: 30px;
+          }
+          
+          .ul_nav_header {
+             display:none;
+          }
+
+          nav ul .nav_button_contact{
+              margin-top: 50px;
+              background-color: #FBD600;
+
+          }
+
         body{
             background-color: white;
         }
@@ -497,6 +553,7 @@ footer{
         }
 
         h1{
+            display: block;
             font-size: 7vw;
             margin-left: auto;
             margin-right: auto;
@@ -607,10 +664,6 @@ footer{
         .p_client{
             margin-left: 25px;
             margin-right: 25px;
-        }
-
-        .menu_burger{
-            display:block;
         }
 
         .quatre_img{
